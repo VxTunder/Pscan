@@ -27,13 +27,13 @@ def scan_port(ipaddress, port):
         sock.settimeout(1.5)
         sock.connect((ipaddress, port))
 
-#this Gets a banner(name & version)
+# this Gets a banner(name & version)
         try:
             banner = get_banner(sock)
         print('[+] Open port ' + str(port) + ' : ' + str(banner))
     except:
         print('[+] open port ' + str(port))
-# The line above is not working idk why!
+#The line above is not working idk why!
 
 
 #enables multy targets (IP and or link)
