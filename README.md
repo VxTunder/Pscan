@@ -17,7 +17,7 @@ def check_ip(ip):
     except ValueError:
         return socket.gethostbyname(ip)
 
-#The banner is defined here
+# The banner is defined here
 def get_banner(s):
         return s.recv(1024)
 
