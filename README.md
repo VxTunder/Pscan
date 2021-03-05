@@ -17,7 +17,7 @@ def check_ip(ip):
     except ValueError:
         return socket.gethostbyname(ip)
 
-#The banner is defined here
+# The banner is defined here
 def get_banner(s):
         return s.recv(1024)
 
@@ -33,7 +33,7 @@ def scan_port(ipaddress, port):
         print('[+] Open port ' + str(port) + ' : ' + str(banner))
     except:
         print('[+] open port ' + str(port))
-#The line above is not working idk why!
+# The line above is not working idk why!
 
 
 #enables multy targets (IP and or link)
